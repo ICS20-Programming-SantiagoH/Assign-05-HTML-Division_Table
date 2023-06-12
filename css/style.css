@@ -1,0 +1,33 @@
+/* Created by: Santiago Hewett
+* Created on: May 2023
+* This CSS file defines the style for index.html
+* ICS2O-Unit5-03-HTML-Factorial
+*/
+
+body {
+background-color:
+#84b3f0;
+
+}
+
+h2 {
+background-color:rgb(176,143, 255);
+color: hsl(87,100%, 30%);
+padding: 40px;
+text-align: center;
+
+}
+
+
+
+h5 {
+background-color:
+#ba52ff;
+
+}
+
+h6 {
+background-color:
+#b152ff;
+
+}

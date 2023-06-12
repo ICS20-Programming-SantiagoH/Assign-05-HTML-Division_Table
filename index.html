@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--- Meta Data --->
+  <meta charset="utf-8" />
+  <meta name="description" content="Remainder Calculator" />
+  <meta name="keywords" content="immaculata, ics2o" />
+  <meta name="author" content="Remy Skelton" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--- Favicon --->
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png" />
+  <link rel="manifest" href="./fav/site.webmanifest" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!---Title for the page--->
+  <title>Remainder Calculator</title>
+</head>
+
+<body>
+  <!--- Script --->
+  <script defer src="http://code.getmdl.io/1.3.0/matrial.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!---MDL Header for the page--->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Remainder Calculator</span>
+      </div>
+    </header>
+    <!--- Header at the top of page with subheader--->
+    <h2>Remainder Calculator</h2>
+    <h5>Please Entre a Number you Want the Remainder of(Use min and max for the area of numbers you want the remainder of).</h5>
+    <!--- Function --->
+    <form action="javascript:enterClicked()">
+    <!--- User Info --->
+      <label for="userNumber">Please Entre Your Number:</label>
+      <input type="number" id="user-number" placeholder="ex.12" step="1"><br><br>
+      
+      <label for="min">Please Entre Your min Number:</label>
+      <input type="number" id="min" placeholder="ex.5" step="1"><br><br>
+      
+      <label for="max">Please Entre Your max Number:</label>
+      <input type="number" id="max" placeholder="ex.7" step="1"><br><br>
+
+      <label for="display">Display options:</label>
+        <select name="Display options" id="display-options">
+  <option value="Min to Max">Min to Max</option>
+  <option value="Max to Min">Max to Min</option>
+</select>
+      
+      <p></p>
+      
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick ="enterClicked()">
+        Get Results
+</button>
+    </form>
+    </p>
+    <!-- Create a space where the remainder will be displayed -->
+    <h6>
+      <div id="result"></div>
+    </h6>
+    <!---Image for webpage--->
+    <center>
+      <img src="./images/remainder.jpg" width="500" height="350" alt="Ramainder">
+    </center>
+</body>
+</html>
